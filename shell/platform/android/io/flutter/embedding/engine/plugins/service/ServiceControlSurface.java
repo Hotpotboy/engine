@@ -5,9 +5,9 @@
 package io.flutter.embedding.engine.plugins.service;
 
 import android.app.Service;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.lifecycle.Lifecycle;
+import android.arch.lifecycle.Lifecycle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 
 /**
  * Control surface through which a {@link Service} attaches to a {@link FlutterEngine}.
@@ -29,7 +29,7 @@ public interface ServiceControlSurface {
    * foreground, false otherwise.
    */
   void attachToService(
-      @NonNull Service service, @Nullable Lifecycle lifecycle, boolean isForeground);
+          @NonNull Service service, @Nullable Lifecycle lifecycle, boolean isForeground);
 
   /**
    * Call this method from the {@link Service} that is attached to this {@code

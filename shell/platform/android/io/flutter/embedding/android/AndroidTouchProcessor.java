@@ -2,10 +2,11 @@ package io.flutter.embedding.android;
 
 import android.graphics.Matrix;
 import android.os.Build;
+import android.support.annotation.IntDef;
 import android.view.InputDevice;
 import android.view.MotionEvent;
-import androidx.annotation.IntDef;
-import androidx.annotation.NonNull;
+
+import android.support.annotation.NonNull;
 import io.flutter.embedding.engine.renderer.FlutterRenderer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

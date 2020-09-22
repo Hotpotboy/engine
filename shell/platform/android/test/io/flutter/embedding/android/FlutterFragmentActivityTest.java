@@ -2,7 +2,7 @@ package io.flutter.embedding.android;
 
 import static org.junit.Assert.assertTrue;
 
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;

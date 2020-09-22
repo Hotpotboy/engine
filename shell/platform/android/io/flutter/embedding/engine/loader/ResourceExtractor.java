@@ -11,9 +11,10 @@ import android.content.pm.PackageManager;
 import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.support.annotation.WorkerThread;
 import android.util.Log;
-import androidx.annotation.NonNull;
-import androidx.annotation.WorkerThread;
+import android.support.annotation.NonNull;
+
 import io.flutter.BuildConfig;
 import java.io.*;
 import java.util.ArrayList;
