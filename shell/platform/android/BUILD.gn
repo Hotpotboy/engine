@@ -247,6 +247,12 @@ embedding_dependencies_jars =
                 ],
                 "list lines")
 
+embedding_dependencies_jars += ["/Users/zhanghang/work/flutter/engine/src/third_party/android_embedding_dependencies/lib/support_fragment_28_0_0.jar",
+"/Users/zhanghang/work/flutter/engine/src/third_party/android_embedding_dependencies/lib/lifecycle_1_1_1.jar",
+"/Users/zhanghang/work/flutter/engine/src/third_party/android_embedding_dependencies/lib/lifecycle_runtime_1_1_1.jar",
+"/Users/zhanghang/work/flutter/engine/src/third_party/android_embedding_dependencies/lib/lifecycle_viewmodel_1_1_1.jar",
+"/Users/zhanghang/work/flutter/engine/src/third_party/android_embedding_dependencies/lib/support_compat_28_0_0.jar"]
+
 action("flutter_shell_java") {
   script = "//build/android/gyp/javac.py"
   depfile = "$target_gen_dir/$target_name.d"

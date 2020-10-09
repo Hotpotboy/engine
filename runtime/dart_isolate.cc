@@ -496,8 +496,10 @@ bool DartIsolate::MarkIsolateRunnable() {
 
   tonic::DartState::Scope scope(this);
 
+  auto dartRootLibrary = Dart_RootLibrary();
+
   auto user_entrypoint_function =
-      Dart_GetField(Dart_RootLibrary(), tonic::ToDart(entrypoint_name.c_str()));
+      Dart_GetField(dartRootLibrary, tonic::ToDart(entrypoint_name.c_str()));
 
   auto entrypoint_args = tonic::ToDart(args);
 

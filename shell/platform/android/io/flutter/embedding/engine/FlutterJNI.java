@@ -642,7 +642,7 @@ public class FlutterJNI {
         assetManager);
   }
 
-  private native void nativeRunBundleAndSnapshotFromLibrary(
+    private native void nativeRunBundleAndSnapshotFromLibrary(
       long nativePlatformViewId,
       @NonNull String bundlePath,
       @Nullable String entrypointFunctionName,

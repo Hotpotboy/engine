@@ -470,6 +470,8 @@ void Shell::RunEngine(
   FML_DCHECK(is_setup_);
   FML_DCHECK(task_runners_.GetPlatformTaskRunner()->RunsTasksOnCurrentThread());
 
+   // 如果当前线程是UI线程，则直接运行第二个参数
+   // 否则将第二个参数post至UI线程之中执行
   fml::TaskRunner::RunNowOrPostTask(
       task_runners_.GetUITaskRunner(),
       fml::MakeCopyable(

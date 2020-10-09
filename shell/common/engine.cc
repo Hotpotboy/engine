@@ -201,6 +201,7 @@ Engine::RunStatus Engine::PrepareAndLaunchIsolate(
     return RunStatus::FailureAlreadyRunning;
   }
 
+// 根据isolate config准备isolate环境
   if (!isolate_configuration->PrepareIsolate(*isolate)) {
     FML_LOG(ERROR) << "Could not prepare to run the isolate.";
     return RunStatus::Failure;
